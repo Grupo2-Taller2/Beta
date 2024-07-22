@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: com.ejemplo.carmenuy.Main
+Class-Path: objenesis-3.2.jar slf4j-api-1.7.30.jar freetts-1.2.2.jar jun
+ it-platform-commons-1.8.2.jar opentest4j-1.2.0.jar apiguardian-api-1.1.
+ 2.jar byte-buddy-1.14.15.jar sqlite-jdbc-3.41.2.2.jar byte-buddy-agent-
+ 1.14.15.jar junit-platform-engine-1.8.2.jar slf4j-simple-1.7.30.jar
+
