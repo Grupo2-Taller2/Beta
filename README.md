@@ -236,109 +236,106 @@ Queremos agradecer a todos los contribuidores y a la comunidad de desarrolladore
 
 
 ```plaintext
-├── CarmenSandiegoUruguay
-│   ├── pom.xml
-│   ├── README.md
-│   ├── replit.nix
-│   ├── scripts
-│   │   └── list_structure.sh
-│   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   └── com
-│   │   │   │       └── ejemplo
-│   │   │   │           └── carmenuy
-│   │   │   │               ├── config
-│   │   │   │               │   └── GitIgnoreConfig.java
-│   │   │   │               ├── dao
-│   │   │   │               │   ├── BaseDeDatosManager.java
-│   │   │   │               │   ├── LocalidadDAO.java
-│   │   │   │               │   ├── MisionDAO.java
-│   │   │   │               │   ├── PistaDAO.java
-│   │   │   │               │   └── UsuarioDAO.java
-│   │   │   │               ├── exception
-│   │   │   │               │   ├── LocalidadNotFoundException.java
-│   │   │   │               │   └── PistaException.java
-│   │   │   │               ├── Juego.java
-│   │   │   │               ├── Main.java
-│   │   │   │               ├── model
-│   │   │   │               │   ├── Constants.java
-│   │   │   │               │   ├── CSD.java
-│   │   │   │               │   ├── Detective.java
-│   │   │   │               │   ├── Grafo.java
-│   │   │   │               │   ├── Jugador.java
-│   │   │   │               │   ├── Localidad.java
-│   │   │   │               │   ├── Mision.java
-│   │   │   │               │   ├── Partida.java
-│   │   │   │               │   ├── PistaGastronomia.java
-│   │   │   │               │   ├── PistaGeografia.java
-│   │   │   │               │   ├── PistaHistoria.java
-│   │   │   │               │   ├── Pista.java
-│   │   │   │               │   ├── PistaLeyenda.java
-│   │   │   │               │   ├── PistaTurismo.java
-│   │   │   │               │   ├── Rango.java
-│   │   │   │               │   ├── Secuaz.java
-│   │   │   │               │   └── Usuario.java
-│   │   │   │               ├── service
-│   │   │   │               │   ├── AccesibilidadManager.java
-│   │   │   │               │   ├── AudioManager.java
-│   │   │   │               │   ├── ConfigService.java
-│   │   │   │               │   ├── DatabaseInitializationService.java
-│   │   │   │               │   ├── GrafoService.java
-│   │   │   │               │   ├── JuegoService.java
-│   │   │   │               │   ├── LocalidadService.java
-│   │   │   │               │   ├── MisionManager.java
-│   │   │   │               │   ├── NarrativaManager.java
-│   │   │   │               │   ├── PistaService.java
-│   │   │   │               │   └── UsuarioService.java
-│   │   │   │               ├── tts
-│   │   │   │               │   └── TTSManager.java
-│   │   │   │               └── ui
-│   │   │   │                   ├── InputManager.java
-│   │   │   │                   ├── VentanaAyudaVisual.java
-│   │   │   │                   ├── VentanaCaptura.java
-│   │   │   │                   ├── VentanaFinal.java
-│   │   │   │                   ├── VentanaJuego.java
-│   │   │   │                   ├── VentanaLogin.java
-│   │   │   │                   └── VentanaRegistro.java
-│   │   │   └── resources
-│   │   │       ├── config.properties
-│   │   │       ├── imagenes
-│   │   │       │   └── secuaces
-│   │   │       ├── init_database.sql
-│   │   │       ├── localidades.csv
-│   │   │       ├── messages.properties
-│   │   │       ├── pistas.csv
-│   │   │       ├── secuaces.csv
-│   │   │       └── sonidos
-│   │   │           ├── efectos
-│   │   │           ├── musica
-│   │   │           └── voz
-│   │   │               ├── login_exitoso.mp3
-│   │   │               └── login_fallido.mp3
-│   │   └── test
-│   │       └── java
-│   │           └── com
-│   │               └── ejemplo
-│   │                   └── carmenuy
-│   │                       ├── dao
-│   │                       │   └── UsuarioDAOTest.java
-│   │                       ├── model
-│   │                       ├── service
-│   │                       │   └── PistaServiceTest.java
-│   │                       └── ui
-│   │                           └── VentanaAyudaVisualTest.java
-│   └── target
-│       ├── classes
-│       ├── dependency
-│       └── test-classes
-│           └── com
-│               └── ejemplo
-│                   └── carmenuy
-│                       ├── dao
-│                       ├── model
-│                       ├── service
-│                       └── ui
+CarmenSandiegoUruguay
+├── .idea
+├── scripts
+├── list_structure.sh
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── carmenuy
+│   │   │       ├── config
+│   │   │       │   └── GitIgnoreConfig
+│   │   │       ├── dao
+│   │   │       │   ├── BaseDeDatosManager
+│   │   │       │   ├── LocalidadDAO
+│   │   │       │   ├── MisionDAO
+│   │   │       │   ├── PartidaDAO
+│   │   │       │   ├── PistaDAO
+│   │   │       │   ├── SecuazDAO
+│   │   │       │   └── UsuarioDAO
+│   │   │       ├── database
+│   │   │       │   └── DatabaseInitialization
+│   │   │       ├── exception
+│   │   │       ├── manager
+│   │   │       ├── model
+│   │   │       │   ├── Constants
+│   │   │       │   ├── CSD
+│   │   │       │   ├── Detective
+│   │   │       │   ├── Grafo
+│   │   │       │   ├── Jugador
+│   │   │       │   ├── Localidad
+│   │   │       │   ├── Mision
+│   │   │       │   ├── Nodo
+│   │   │       │   ├── Partida
+│   │   │       │   ├── Pista
+│   │   │       │   ├── Rango
+│   │   │       │   ├── Secuaz
+│   │   │       │   └── Usuario
+│   │   │       ├── service
+│   │   │       │   ├── AccesibilidadManager
+│   │   │       │   ├── AudioManager
+│   │   │       │   ├── ConfigService
+│   │   │       │   ├── DatabaseInitializationService
+│   │   │       │   ├── GrafoService
+│   │   │       │   ├── JuegoService
+│   │   │       │   ├── LocalidadService
+│   │   │       │   ├── MisionManager
+│   │   │       │   ├── NarrativaManager
+│   │   │       │   ├── PistaService
+│   │   │       │   ├── UsuarioService
+│   │   │       │   └── tts
+│   │   │       │       ├── ITTSManager
+│   │   │       │       └── TTSManager
+│   │   │       ├── ui
+│   │   │       │   ├── InputManager
+│   │   │       │   ├── VentanaAyudaVisual
+│   │   │       │   ├── VentanaCaptura
+│   │   │       │   ├── VentanaFinal
+│   │   │       │   ├── VentanaJuego
+│   │   │       │   ├── VentanaLogin
+│   │   │       │   ├── VentanaRegistro
+│   │   │       │   └── VentanaResultado
+│   │   │       └── Main
+│   │   ├── resources
+│   │   │   ├── secuaces
+│   │   │   ├── sonidos
+│   │   │   │   ├── efectos
+│   │   │   │   ├── musica
+│   │   │   │   └── voz
+│   │   │   ├── config.properties
+│   │   │   ├── init_database.sql
+│   │   │   ├── localidades.csv
+│   │   │   ├── messages.properties
+│   │   │   ├── pistas.csv
+│   │   │   └── secuaces.csv
+│   └── test
+│       ├── java
+│       │   └── carmenuy
+│       │       ├── dao
+│       │       ├── model
+│       │       ├── service
+│       │       └── ui
+├── target
+├── .gitignore
+├── database.db
+├── pom.xml
+├── README.md
+└── extensions
+    ├── com.intellij.database
+    │   ├── data
+    │   │   ├── aggregators
+    │   │   ├── extractors
+    │   │   ├── loaders
+    │   │   └── schema
+    │   │       ├── Generate POJOs.groovy
+    │   │       └── schema.layouts
+    │   │           ├── File per object.groovy
+    │   │           ├── File per object by schema.groovy
+    │   │           ├── File per object by schema and database.groovy
+    │   │           ├── File per object by schema and type.groovy
+    │   │           └── File per object with order.groovy
+
 
 
 
